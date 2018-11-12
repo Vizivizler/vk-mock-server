@@ -1,4 +1,3 @@
-![j1](https://i.imgur.com/ICYCTLY.png)
 ## Установка
 ```
 git clone https://github.com/Vizivizler/vk-mock-server.git
