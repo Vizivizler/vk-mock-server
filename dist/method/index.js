@@ -34,7 +34,6 @@ function () {
     key: "getResult",
     value: function getResult(cb) {
       _db.default.get(this.category + "." + this.name, function (err, value) {
-        console.log(value);
         return cb(value);
       }); // let data = null;
       //

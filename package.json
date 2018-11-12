@@ -4,7 +4,7 @@
   "description": "Mock сервер",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "pm2 dist/index.js",
+    "start": "node dist/index.js",
     "startDev": "nodemon dist/index.js",
     "build": "npx babel server --watch --out-dir dist --presets=@babel/preset-env"
   },
@@ -17,8 +17,7 @@
     "level": "^4.0.0",
     "leveldown": "^4.0.1",
     "levelup": "^3.1.1",
-    "multer": "^1.4.1",
-    "pm2": "^3.2.2"
+    "multer": "^1.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
