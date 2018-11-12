@@ -1,0 +1,29 @@
+{
+  "name": "vk-mock-server",
+  "version": "1.0.0",
+  "description": "Mock сервер",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "pm2 dist/index.js",
+    "startDev": "nodemon dist/index.js",
+    "build": "npx babel server --watch --out-dir dist --presets=@babel/preset-env"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "level": "^4.0.0",
+    "leveldown": "^4.0.1",
+    "levelup": "^3.1.1",
+    "multer": "^1.4.1",
+    "pm2": "^3.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "nodemon": "^1.18.5"
+  }
+}
