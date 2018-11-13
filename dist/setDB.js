@@ -100,7 +100,7 @@ function loadDB() {
   }, {
     type: 'put',
     key: 'users.get',
-    value: {
+    value: [{
       "id": 210700286,
       "first_name": "Lindsey",
       "last_name": "Stirling",
@@ -110,7 +110,7 @@ function loadDB() {
       },
       "photo_50": "https://pp.vk.me/f6e/4-funfNRMwg.jpg",
       "verified": 1
-    }
+    }]
   }];
 
   _db.default.batch(arr, function (err) {
