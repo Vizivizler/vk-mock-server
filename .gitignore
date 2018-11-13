@@ -2,3 +2,7 @@
 # dependencies
 /node_modules
 /server
+
+/vkDB/*
+!/vkDB/000007.ldb
+!/vkDB/000016.ldb
