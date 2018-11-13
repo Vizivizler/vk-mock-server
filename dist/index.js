@@ -4,6 +4,8 @@ var _express = _interopRequireDefault(require("express"));
 
 var _db = _interopRequireDefault(require("./db"));
 
+var _setDB = _interopRequireDefault(require("./setDB"));
+
 var _index = _interopRequireDefault(require("./method/index"));
 
 var _connect = _interopRequireDefault(require("./connect"));
@@ -20,6 +22,13 @@ app.use(_bodyParser.default.json());
 app.use(_bodyParser.default.urlencoded({
   extended: true
 }));
+
+_db.default.get('mk_loadedb', function (err, value) {
+  if (!value || err) {
+    (0, _setDB.default)();
+  }
+});
+
 app.use('*', function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, Access-Control-Allow-Headers');
